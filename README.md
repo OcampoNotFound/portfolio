@@ -5,7 +5,7 @@
 1. Clone the repository:
 
 ```
-git clone https://github.com/ocamponotfound/portfolio.git
+git clone https://github.com/OcampoNotFound/portfolio.git
 ```
 
 ---
