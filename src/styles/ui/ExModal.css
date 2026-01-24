@@ -1,0 +1,199 @@
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  backdrop-filter: blur(4px);
+  animation: fadeIn 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.modalContent {
+  background-color: rgba(20, 20, 30, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  max-width: 600px;
+  width: 90%;
+  max-height: 85vh;
+  overflow-y: auto;
+  position: relative;
+  animation: slideIn 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+
+.closeButton {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1001;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 1);
+  }
+}
+
+.modalHeader {
+  padding: 32px 24px 24px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.companyImage {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  object-fit: contain;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.headerText h1 {
+  margin: 0 0 8px 0;
+  font-size: 1.75rem;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.role {
+  margin: 0 0 4px 0;
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+}
+
+.period {
+  margin: 0;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.modalBody {
+  padding: 24px;
+}
+
+.section {
+  margin-bottom: 24px;
+}
+
+.section:last-child {
+  margin-bottom: 0;
+}
+
+.section h3 {
+  margin: 0 0 12px 0;
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.85);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+.section p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.responsibilitiesList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.responsibilitiesList li {
+  margin-bottom: 10px;
+  padding-left: 24px;
+  position: relative;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.responsibilitiesList li:before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.techList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.techBadge {
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.8);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.techBadge:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.95);
+}
+
+/* Scrollbar styling */
+.modalContent::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modalContent::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modalContent::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.modalContent::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}

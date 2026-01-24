@@ -44,21 +44,3 @@
   overflow-y: auto;
   overflow-x: hidden;
 }
-
-.experienceItem {
-  padding: 15px;
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  border-radius: 8px;
-  height: 24rem;
-  width: 24rem;
-
-  &:hover {
-    border-color: rgba(255, 255, 255, 0.6);
-    background-color: rgba(255, 255, 255, 0.05);
-  }
-
-  & h2 {
-    margin: 0;
-    font-size: 1.5rem;
-  }
-}

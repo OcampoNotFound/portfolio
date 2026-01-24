@@ -5,7 +5,7 @@ export interface ExperienceData {
   period: string;
   title: string;
   description: string;
-  responsibilities: string[];
+  responsabilities: string[];
   tech: string[];
   image?: string;
 }
@@ -19,7 +19,7 @@ export const experience: ExperienceData[] = [
     title: "Full-Stack Developer at AndesBPO, La Ceja, Colombia",
     description:
       "Front-End developer using React.js, TypeScript, ChakraUI and CSS to create responsive web applications. Back-End developer using Python and FastAPI to build robust APIs and services.",
-    responsibilities: [
+    responsabilities: [
       "Developing web applications using frameworks like Next.js and libraries like React.js, as well as back-end languages like Python.",
       "Developing responsive web applications, ensuring accessibility across various devices and screen sizes.",
       "Developing web interfaces from designs created in Figma.",

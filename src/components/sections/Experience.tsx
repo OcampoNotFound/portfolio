@@ -1,4 +1,5 @@
-import { experience } from "../../data/experience.data";
+// import { experience } from "../../data/experience.data";
+import { ExCard } from "../ui/ExCard";
 
 export const Experience = () => {
   return (
@@ -6,11 +7,7 @@ export const Experience = () => {
       <div className="experienceContainer">
         <h1 className="title">Experience</h1>
         <div className="experienceContainerList">
-          {experience.map((experience) => (
-            <div key={experience.id} className="experienceItem">
-              <h2>{experience.company}</h2>
-            </div>
-          ))}
+          <ExCard />
         </div>
       </div>
     </section>
