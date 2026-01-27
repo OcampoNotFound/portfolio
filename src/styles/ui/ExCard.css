@@ -12,7 +12,7 @@
   &:hover {
     border-color: rgba(255, 255, 255, 0.6);
     background-color: rgba(255, 255, 255, 0.05);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 24px rgba(255, 255, 255, 0.6);
   }
 
   & .companyHeader {
@@ -40,28 +40,6 @@
     line-height: 1.4;
     text-align: center;
     flex-grow: 1;
-  }
-}
-
-.modalButton {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  width: 36px;
-  height: 36px;
-  border-radius: 6px;
-  border: 0px;
-  background-color: transparent;
-  color: rgba(255, 255, 255, 0.7);
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  backdrop-filter: blur(4px);
-
-  &:active {
-    transform: scale(0.95);
   }
 }
 

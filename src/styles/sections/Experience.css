@@ -28,20 +28,19 @@
       white-space: nowrap;
     }
   }
-}
 
-.experienceContainerList {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  width: 80%;
-  height: calc(100vh - 6rem);
-  padding: 20px;
-  overflow-y: auto;
-  overflow-x: hidden;
+  & .experienceContainerList {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 80%;
+    height: calc(100vh - 6rem);
+    padding: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
 }

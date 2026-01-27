@@ -1,0 +1,27 @@
+.projectCard {
+  padding: 15px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  height: 24rem;
+  width: 24rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    border-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 24px rgba(255, 255, 255, 0.6);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+
+  & .projectTitle {
+    font-size: 1.8rem;
+    margin: 0;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
