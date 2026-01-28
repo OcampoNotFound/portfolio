@@ -17,12 +17,11 @@ export function About() {
               I'm a software analyst and developer, and I'm passionate about web
               UI programming. I have three years of experience developing
               websites using various JavaScript frameworks and libraries, such
-              as ReactJS and NextJS. I love creating interfaces from designs
-              using pixel-perfect techniques. I'm a minimalist professional. I'm
-              a capable leader with a strong imagination and creativity for
-              solving challenges. I enjoy teamwork, building large projects,
-              sharing ideas, and listening to others. I love anime, traditional
-              Japanese style, and Linux.
+              as ReactJS and NextJS. I love creating interfaces from designs.
+              I'm a minimalist professional. I'm a capable leader with a strong
+              imagination and creativity for solving challenges. I enjoy
+              teamwork, building large projects, sharing ideas, and listening to
+              others. I love anime, traditional Japanese style, and Linux.
             </p>
           </div>
         </div>
