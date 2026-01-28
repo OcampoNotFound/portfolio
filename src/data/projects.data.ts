@@ -42,7 +42,7 @@ export const projects: ProjectsData[] = [
     ],
   },
   {
-    title: "Toki Pomito (Pomodoro Timer)",
+    title: "Toki Pomito",
     description:
       "A Pomodoro timer application built with React and TypeScript, and there is another version made in Angular.",
     tech: [
@@ -65,7 +65,7 @@ export const projects: ProjectsData[] = [
     ],
   },
   {
-    title: "Toki Notes (ToDo List)",
+    title: "Toki Notes",
     description:
       "A simple and elegant to-do list application built with React and TypeScript, and there is another version made in Angular.",
     tech: [
