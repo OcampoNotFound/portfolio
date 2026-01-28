@@ -14,14 +14,19 @@ export function About() {
             </div>
             <h1>Hi, I'm Brayan Ocampo</h1>
             <p>
-              I'm a software analyst and developer, and I'm passionate about web
-              UI programming. I have three years of experience developing
-              websites using various JavaScript frameworks and libraries, such
-              as ReactJS and NextJS. I love creating interfaces from designs.
-              I'm a minimalist professional. I'm a capable leader with a strong
-              imagination and creativity for solving challenges. I enjoy
-              teamwork, building large projects, sharing ideas, and listening to
-              others. I love anime, traditional Japanese style, and Linux.
+              I’m a software analyst and developer with a strong passion for web
+              UI. I have 3+ years of experience building websites using modern
+              JavaScript frameworks like React and Next.js. I love turning
+              designs into clean, functional interfaces.
+              <br />
+              I’m a minimalist by nature, a creative problem-solver, and a
+              confident leader who enjoys tackling challenges with imagination
+              and structure. I thrive in team environments, love collaborating
+              on large-scale projects, sharing ideas, and learning from others.
+              <br />
+              Outside of code, I’m into anime, traditional Japanese aesthetics,
+              and Linux — all of which influence my taste for simplicity,
+              detail, and well-crafted systems.
             </p>
           </div>
         </div>
