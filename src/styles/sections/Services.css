@@ -1,11 +1,70 @@
-.servicesSection {
-  background-color: gray;
+.servicesContactSection {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px;
-  height: 100vh;
-  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
   scroll-snap-align: start;
+
+  & svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  & .container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+
+    & .title {
+      font-size: 2.5rem;
+      margin: 0;
+      position: absolute;
+      bottom: 20px;
+      left: 3rem;
+      transform: rotate(-90deg);
+      transform-origin: left bottom;
+      white-space: nowrap;
+    }
+
+    & .servicesContact {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      height: 70%;
+      gap: 40px;
+      padding: 60px;
+
+      & .services {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+
+        & ul {
+          padding: 0;
+          margin: 0;
+          width: 100%;
+          text-align: center;
+
+          & li {
+            list-style: none;
+            font-size: 1.6rem;
+            font-weight: 500;
+            margin-bottom: 24px;
+            letter-spacing: 0.03em;
+
+            &:last-chlid {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
 }
